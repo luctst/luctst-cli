@@ -12,6 +12,9 @@
 	"eslintIgnore": [
 		"./lib/build/"
 	],
+	"ava": {
+		"cache": true
+	},
 	"scripts": {
 		"test": "ava --verbose ./test/*.js",
 		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
