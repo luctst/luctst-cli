@@ -1,5 +1,2 @@
 import test from "ava";
-
-test("Repo-template fake test :)", t => {
-	t.pass();
-});
+test.todo("Implement test");
