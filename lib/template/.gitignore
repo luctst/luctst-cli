@@ -62,4 +62,4 @@ typings/
 .next
 
 # vscode settings
-.vscode
+.vscode/
