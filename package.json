@@ -1,8 +1,9 @@
 {
-	"name": "repo-template",
+	"name": "luctst-cli",
 	"version": "1.0.0",
-	"description": "Project boilerplate for easily create and share your new cool modules. ♻️ ♻️",
-	"main": "lib/index.js",
+	"description": "Project boilerplate for easily create and share your new cool module. ♻️ ♻️",
+	"main": "lib/cli.js",
+	"bin": "lib/cli.js",
 	"files": [
 		"lib/"
 	],
@@ -10,8 +11,8 @@
 		"node": ">= 10.0.0"
 	},
 	"eslintIgnore": [
-		"./lib/build/",
-		"./lib/template/"
+		"lib/build/",
+		"lib/template/"
 	],
 	"ava": {
 		"cache": true
@@ -27,15 +28,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://www.github.com/luctst/repo-template"
+		"url": "https://www.github.com/luctst/luctst-cli"
 	},
 	"keywords": [],
 	"author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://www.github.com/luctst/repo-template/issues"
+		"url": "https://www.github.com/luctst/luctst-cli/issues"
 	},
-	"homepage": "https://www.github.com/luctst/repo-template",
+	"homepage": "https://www.github.com/luctst/luctst-cli",
 	"devDependencies": {
 		"ava": "^2.1.0",
 		"eslint": "^6.0.1",
@@ -45,5 +46,10 @@
 		"eslint-plugin-prettier": "^3.1.0",
 		"eslint-watch": "^5.1.2",
 		"prettier": "^1.18.2"
+	},
+	"dependencies": {
+		"chalk": "^2.4.2",
+		"inquirer": "^6.5.1",
+		"meow": "^5.0.0"
 	}
 }
