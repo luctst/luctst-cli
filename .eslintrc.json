@@ -1,10 +1,15 @@
 {
-	"extends" : ["airbnb-base", "prettier"],
+	"extends": [
+		"airbnb-base",
+		"prettier"
+	],
 	"env": {
 		"node": true,
 		"es6": true
 	},
-	"plugins": ["prettier"],
+	"plugins": [
+		"prettier"
+	],
 	"rules": {
 		"prettier/prettier": 1,
 		"no-unused-expressions": [
@@ -22,9 +27,16 @@
 				"skipComments": true
 			}
 		],
+		"no-else-return": [
+			"error",
+			{
+				"allowElseIf": true
+			}
+		],
 		"max-lines-per-function": ["warn", 20],
 		"complexity": ["warn", 5],
 		"max-nested-callbacks": ["warn", 2],
-		"max-depth": ["warn", 3]
+		"max-depth": ["warn", 3],
+		"no-underscore-dangle": 0
 	}
 }
