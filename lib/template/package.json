@@ -1,5 +1,48 @@
 {
 	"name": "",
 	"version": "1.0.0",
-	"description": ""
+	"description": "",
+	"main": "lib/index.js",
+	"author": "",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "",
+	"files": [
+		"lib/"
+	],
+	"engines": {
+		"node": ">= 10.0.0"
+	},
+	"eslintIgnore": [
+		"lib/build/"
+	],
+	"ava": {
+		"cache": true
+	},
+	"keywords": [],
+	"scripts": {
+		"test": "ava --verbose ./test/*.js",
+		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
+		"lint": "npx eslint --cache './lib/**/*.js'",
+		"lint:watch": "esw -w --clear --color --cache './lib/**/*.js'",
+		"lint:fix": "npx eslint --fix './lib/**/*.js'",
+		"style": "prettier -c './lib/**/*.js'",
+		"style:fix": "prettier --c --write './lib/**/*.js'"
+	},
+	"devDependencies": {
+		"ava": "",
+		"eslint": "",
+		"eslint-config-airbnb-base": "",
+		"eslint-config-prettier": "",
+		"eslint-plugin-import": "",
+		"eslint-plugin-prettier": "",
+		"eslint-watch": "",
+		"prettier": ""
+	}
 }
