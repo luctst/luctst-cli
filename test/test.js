@@ -1,2 +1,2 @@
 import test from "ava";
-test.todo("Implement test");
+test.todo("Check if directory created is equal to template/");
