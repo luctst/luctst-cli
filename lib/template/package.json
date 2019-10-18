@@ -1,18 +1,18 @@
 {
-	"name": "",
+	"name": "{{name}}",
 	"version": "1.0.0",
-	"description": "",
+	"description": "{{description}}",
 	"main": "lib/index.js",
-	"author": "",
+	"author": "{{githubUser}}",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://www.github.com/{{githubUser}}/{{projectName}}"
 	},
 	"bugs": {
-		"url": ""
+		"url": "https://www.github.com/{{githubUser}}/{{projectName}}/issues"
 	},
-	"homepage": "",
+	"homepage": "https://www.github.com/{{githubUser}}/{{projectName}}",
 	"files": [
 		"lib/"
 	],
