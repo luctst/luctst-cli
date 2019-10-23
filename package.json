@@ -30,7 +30,13 @@
 		"type": "git",
 		"url": "https://www.github.com/luctst/luctst-cli"
 	},
-	"keywords": [],
+	"keywords": [
+		"cli",
+		"node",
+		"nodejs",
+		"cli-tool",
+		"cli-tool-generator"
+	],
 	"author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
 	"license": "MIT",
 	"bugs": {
