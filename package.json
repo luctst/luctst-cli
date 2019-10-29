@@ -1,11 +1,11 @@
 {
 	"name": "luctst-cli",
-	"version": "1.2.0",
+	"version": "1.19.0",
 	"description": "Project boilerplate for easily create and share your new cool module. ♻️ ♻️",
 	"main": "lib/cli.js",
 	"bin": "lib/cli.js",
 	"files": [
-		"lib/*"
+		"lib/**/*"
 	],
 	"engines": {
 		"node": ">= 10.0.0"
@@ -55,7 +55,6 @@
 	},
 	"dependencies": {
 		"chalk": "^2.4.2",
-		"copy-dir": "^1.2.0",
 		"inquirer": "^6.5.1",
 		"meow": "^5.0.0",
 		"ora": "^4.0.2",
