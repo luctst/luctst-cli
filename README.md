@@ -19,7 +19,7 @@
 ## Usage
 To start using this package create a folder and run this command:
 ```
-npx luctst-cli
+npx luctst-cli start
 ```
 Follow the instructions :).
 
