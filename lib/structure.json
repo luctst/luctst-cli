@@ -25,6 +25,7 @@
 			"name": "test",
 			"files": ["test.js"]
 		},
+		".eslintrc.json",
 		".gitignore",
 		".prettierignore",
 		".prettierrc.json",
