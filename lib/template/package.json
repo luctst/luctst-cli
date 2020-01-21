@@ -31,15 +31,5 @@
 		"lint:fix": "npx eslint --fix './lib/**/*.js'",
 		"style": "prettier -c './lib/**/*.js'",
 		"style:fix": "prettier --c --write './lib/**/*.js'"
-	},
-	"devDependencies": {
-		"ava": "",
-		"eslint": "",
-		"eslint-config-airbnb-base": "",
-		"eslint-config-prettier": "",
-		"eslint-plugin-import": "",
-		"eslint-plugin-prettier": "",
-		"eslint-watch": "",
-		"prettier": ""
 	}
 }
