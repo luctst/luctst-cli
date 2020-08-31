@@ -1,4 +1,16 @@
-# luctst-cli
+<div align="center">
+  <!-- <a href="#">
+  	<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif" alt="Logo project" height="160" />
+  </a> -->
+  <br>
+  <br>
+  <p>
+    <b>luctst-cli</b>
+  </p>
+  <p>
+     <i>A cli tool to generate node module project.</i>
+  </p>
+  <p>
 
 [![Build Status](https://travis-ci.com/luctst/luctst-cli.svg?branch=master)](https://travis-ci.com/luctst/luctst-cli)
 [![NPM version](https://img.shields.io/npm/v/luctst-cli?style=flat-square)](https://img.shields.io/npm/v/luctst-cli?style=flat-square)
@@ -8,70 +20,89 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Twitter](https://img.shields.io/twitter/follow/luctstt.svg?label=Follow&style=social)](https://twitter.com/luctstt)
 
-*A cli tool to generate node module project.*
+  </p>
+</div>
 
-## Features
+---
+
+**Content**
+
+* [Features](##features)
+* [Install](##install)
+* [Usage](##usage)
+* [Exemples](##exemples)
+* [Documentation](##documentation)
+* [Contributing](##contributing)
+* [Maintainers](##maintainers)
+
+## Features ✨
 * Eslint.
 * Prettier.
 * Ava.
+* Editor config.
 * Continue integration with TravisCi
 
-## Usage
-To start using this package create a folder and run this command:
+## Install 🐙
 ```
+npm install luctst-cli
+```
+
+## Usage 💡
+```sh
+npx luctst-cli [command] [options]
+```
+
+## Exemples 🖍
+### Default path
+```sh
 npx luctst-cli start
 ```
-Follow the instructions :).
+Create structure at the root of your nodejs process.
 
-If you don't have npx try updating your nodejs version or run:
-```
-npm install luctst-cli -g
-```
-
-Once your structure is created install all dependencies that you need and choose a script:
-```
-npm run test:watch
-```
-
-Watch all files with `ava` in `test/` folder.
-```
-npm run lint:watch
-```
-
-Watch all files with `estlint`, `prettier` in `lib` folder.
-> **Note** - Prettier can fix some errors automatically, run `npm run lint:fix`
-
-> **Note** - You must have node10.0.0
-
-## Structure
-```
-├── .github
-│	├── ISSUE_TEMPLATE
-│	│	├── bug_report.md
-│	│	├── feature_request.md
-│	├── CODE_OF_CONDUCT.md
-│	├── CONTRIBUTING.md
-│	├── LICENSE
-│	├── pull_request_template.md
-├── lib
+### Custom path
+```sh
 ├── test
-│	├── test.js
-│	├── .editorconfig
-│	├── .estlintrc.json
-│	├── .gitattributes
-│	├── .gitignore
-│	├── .prettierignore
-│	├── .prettierrc.json
-│	├── .travis.yml
-│	├── package-lock.json
-│	├── package.json
-│	├── README.md
+
+npx luctst-cli start --path=test/
 ```
+Create project inside the `test` folder.
 
-## Contributing
-You've found an issue ? A new idea for the project and you want contribute ? It's nice, but before coding make sure you have read the [CONTRIBUTING.md](https://github.com/luctst/luctst-cli/blob/master/.github/CONTRIBUTING.md) file it is important.
+## Documentation 📄
+**Commands availables:**
+* `start`, start the process to create your project.
 
-## Licence
-MIT [LICENSE](https://github.com/luctst/luctst-cli/blob/master/.github/LICENSE)
+**Flags:**
+* `--version -v`, show the package version.
+* `--help -h`, display all commands and flags availables.
+* `--path -p`, custom path where the project must be created
 
-<p style="font-size:8px;text-align:center;margin-top:50px;">File generated with <a href="https://github.com/luctst/get-good-readme">get-good-readme</a> module.</p>
+**Scripts:**
+
+Those scripts are runnables once the process is done:
+* `test`, Test all files in `test` folder with Ava.
+* `test:watch`, Watch and test all files in `test` folder with Ava.
+* `lint`, Lint all files with prettier and eslint in `lib` folder.
+* `lint:watch`, Watch and lint all files with prettier and eslint in `lib` folder.
+* `lint:fix`, Fix some errors and warnings automatically.
+
+## Contributing 🍰
+Please make sure to read the [Contributing Guide](https://github.com/luctst/luctst-cli/blob/master/.github/CONTRIBUTING.md) before making a pull request.
+
+Thank you to all the people who already contributed to this project!
+
+## Maintainers 👷
+<table>
+  <tr>
+    <td align="center"><a href="https://lucastostee.now.sh/"><img src="https://avatars3.githubusercontent.com/u/22588842?s=460&v=4" width="100px;" alt="Tostee Lucas"/><br /><sub><b>Tostee Lucas</b></sub></a><br /><a href="#" title="Code">💻</a></td>
+  </tr>
+</table>
+
+## License ⚖️
+MIT
+
+---
+<div align="center">
+	<b>
+		<a href="https://www.npmjs.com/package/get-good-readme">File generated with get-good-readme module</a>
+	</b>
+</div>
