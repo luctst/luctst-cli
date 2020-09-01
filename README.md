@@ -41,6 +41,31 @@
 * Ava.
 * Editor config.
 * Continue integration with TravisCi
+* Copy this structure
+```
+├── .github/
+│	├── ISSUE_TEMPLATE/
+│	│	├── bug_report.md
+│	│	├── feature_request.md
+│	├── CODE_OF_CONDUCT.md
+│	├── CONTRIBUTING.md
+│	├── LICENSE
+│	├── pull_request_template.md
+├── lib/
+│	├── main.js
+├── test/
+│	├── test.js
+├── .editorconfig
+├── .estlintrc.json
+├── .gitattributes
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.json
+├── .travis.yml
+├── package-lock.json
+├── package.json
+├── README.md
+```
 
 ## Install 🐙
 ```
