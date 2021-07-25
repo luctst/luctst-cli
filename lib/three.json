@@ -31,5 +31,6 @@
 	".prettierignore",
 	".prettierrc.json",
 	".travis.yml",
+	".npmignore",
 	"package.json"
 ]
