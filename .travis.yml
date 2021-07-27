@@ -15,7 +15,7 @@ before_install:
   - npm i -g npm@latest
 
 install:
-- npm install
+- npm install --legacy-peer-deps
 
 script:
 - npm test
