@@ -99,7 +99,12 @@ Create project inside the `test` folder.
 **Flags:**
 * `--version -v`, show the package version.
 * `--help -h`, display all commands and flags availables.
-* `--path -p`, custom path where the project must be created
+* `--path -p`, custom path where the project must be created.
+* `--gitignore`, The languages to use in your .gitignore file.
+* `--name -n`, Your name for LICENCE file.
+* `--github-user`, Your github username.
+* `--project-name`, The name of your project.
+* `--description, -d`, Little description of your project. 
 
 **Scripts:**
 
