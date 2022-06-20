@@ -9,6 +9,12 @@
 					"feature_request.md"
 				]
 			},
+			{
+				"name": "workflows",
+				"files": [
+					"publish.yml"
+				]
+			},
 			"CODE_OF_CONDUCT.md",
 			"CONTRIBUTING.md",
 			"LICENSE",
@@ -30,7 +36,6 @@
 	".eslintrc.json",
 	".prettierignore",
 	".prettierrc.json",
-	".travis.yml",
 	".npmignore",
 	"package.json"
 ]

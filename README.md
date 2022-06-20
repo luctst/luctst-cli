@@ -42,6 +42,7 @@
 * Editor config.
 * Continue integration with TravisCi
 * Copy this structure
+* Github action (publish new version to npm)
 ```
 ├── .github/
 │	├── ISSUE_TEMPLATE/
