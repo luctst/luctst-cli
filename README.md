@@ -45,6 +45,8 @@
 * Github action (publish new version to npm)
 ```
 ├── .github/
+│ ├── workflows/
+│ │ ├── publish.yml
 │	├── ISSUE_TEMPLATE/
 │	│	├── bug_report.md
 │	│	├── feature_request.md
@@ -62,7 +64,6 @@
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.json
-├── .travis.yml
 ├── package-lock.json
 ├── package.json
 ├── README.md
