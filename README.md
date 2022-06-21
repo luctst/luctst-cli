@@ -43,6 +43,7 @@
 * Continue integration with TravisCi
 * Copy this structure
 * Github action (publish new version to npm)
+* Works for ECMAScript module
 ```
 ├── .github/
 │ ├── workflows/

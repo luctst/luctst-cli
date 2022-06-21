@@ -1,8 +1,9 @@
 {
+	"type": "module",
 	"name": "{{projectName}}",
 	"version": "1.0.0",
 	"description": "{{description}}",
-	"main": "lib/index.js",
+	"exports": "lib/index.js",
 	"author": "{{githubUser}}",
 	"license": "MIT",
 	"files": [
@@ -17,7 +18,7 @@
 	},
 	"homepage": "https://www.github.com/{{githubUser}}/{{projectName}}",
 	"engines": {
-		"node": ">= 10.0.0"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"eslintIgnore": [
 		"lib/build/"
