@@ -42,7 +42,8 @@
 * Editor config.
 * Continue integration with TravisCi
 * Copy this structure
-* Github action (publish new version to npm, need to add NPM_TOKEN secret variable in repo config).
+* Publish new version to npm with github action, need to add NPM_TOKEN secret variable in repo config.
+* Create a new tag with git and github action every time you push on master, need to add TOKEN_TAG secret variable in repo config.
 * Works for ECMAScript module
 ```
 ├── .github/

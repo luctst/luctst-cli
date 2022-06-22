@@ -1,6 +1,6 @@
 {
 	"name": "luctst-cli",
-	"version": "3.4.5",
+	"version": "3.4.6",
 	"description": "Project boilerplate for easily create and share your new cool module. ♻️ ♻️",
 	"main": "lib/cli.js",
 	"bin": "lib/cli.js",
