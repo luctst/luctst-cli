@@ -42,7 +42,7 @@
 * Editor config.
 * Continue integration with TravisCi
 * Copy this structure
-* Github action (publish new version to npm)
+* Github action (publish new version to npm, need to add NPM_TOKEN secret variable in repo config).
 * Works for ECMAScript module
 ```
 ├── .github/
