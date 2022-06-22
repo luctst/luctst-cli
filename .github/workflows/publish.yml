@@ -66,5 +66,5 @@ jobs:
           github_token: ${{ secrets.TOKEN_TAG }}
           github_repo: ${{ github.repository }}
           git_commit_sha: ${{ github.sha }}
-          version: "1.0.0"
+          version: ${{ env.PACKAGE_VERSION }}
           git_tag_prefix: "v"
