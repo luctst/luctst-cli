@@ -1,68 +1,22 @@
 {
+	"private": true,
 	"name": "luctst-cli",
-	"version": "3.5.6",
-	"description": "Project boilerplate for easily create and share your new cool module. ♻️ ♻️",
-	"main": "lib/cli.js",
-	"bin": "lib/cli.js",
-	"files": [
-		"lib/**/*"
-	],
-	"engines": {
-		"node": ">= 10.0.0"
-	},
-	"eslintIgnore": [
-		"lib/build/",
-		"lib/template/"
-	],
-	"ava": {
-		"cache": true
-	},
+	"version": "1.0.0",
+	"packageManager": "pnpm",
 	"scripts": {
-		"test": "ava --verbose ./test/*.js",
-		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
-		"lint": "npx eslint --cache './lib/**/*.js'",
-		"lint:watch": "esw -w --clear --color --cache './lib/**/*.js'",
-		"lint:fix": "npx eslint --fix './lib/**/*.js'",
-		"style": "prettier -c './lib/**/*.js'",
-		"style:fix": "prettier --c --write './lib/**/*.js'"
+		"lint": "pnpm run --filter './packages/*' --if-present -r lint",
+		"typecheck": "pnpm run --filter './packages/*' --if-present -r typecheck",
+		"prepare": "husky install .husky"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://www.github.com/luctst/luctst-cli"
+	"engines": {
+		"node": ">=16.0.0",
+		"npm": "please use pnpm",
+		"yarn": "please use pnpm"
 	},
-	"keywords": [
-		"cli",
-		"node",
-		"nodejs",
-		"cli-tool",
-		"cli-tool-generator"
-	],
-	"author": "Tostée Lucas <lucas.tostee@gmail.com> (https://www.lucas-tostee.com)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://www.github.com/luctst/luctst-cli/issues"
-	},
-	"np": {
-		"yarn": false,
-		"contents": "lib"
-	},
-	"homepage": "https://www.github.com/luctst/luctst-cli",
+	"license": "ISC",
 	"devDependencies": {
-		"ava": "^2.4.0",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb-base": "^13.2.0",
-		"eslint-config-prettier": "^6.11.0",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-prettier": "^3.1.4",
-		"eslint-watch": "^5.1.2",
-		"prettier": "^1.19.1"
-	},
-	"dependencies": {
-		"chalk": "^2.4.2",
-		"inquirer": "^6.5.2",
-		"meow": "^7.1.1",
-		"node-fetch": "^2.6.0",
-		"ora": "^4.1.1",
-		"replace-in-file": "^4.3.1"
+		"@commitlint/cli": "^17.4.2",
+		"@commitlint/config-conventional": "^17.4.2",
+		"husky": "^8.0.1"
 	}
 }
